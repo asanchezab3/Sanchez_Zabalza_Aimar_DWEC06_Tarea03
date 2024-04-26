@@ -14,7 +14,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/cocktail/:id" element={<Cooktail />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/error-cooktail" element={<Error type={"cooktail"}/>} />
+          <Route path="*" element={<Error type={"not"}/>} />
         </Routes>
       </Router>
     </main>

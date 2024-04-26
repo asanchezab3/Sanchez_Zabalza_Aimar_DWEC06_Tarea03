@@ -5,7 +5,6 @@ import IDrink from "../interface/IDrink";
 import Card from "./NotRutes/Card";
 
 function Home() {
-  const [drinksObjet, setDrinksObjet] = useState<Object[]>([]);
   const [drinks, setDrinks] = useState<IDrink[]>([]);
   const [load, setLoad] = useState<boolean>(true);
   useEffect(() => {
